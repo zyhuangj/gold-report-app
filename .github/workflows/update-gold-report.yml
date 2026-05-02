@@ -4,10 +4,23 @@ on:
   workflow_dispatch:
   schedule:
     # GitHub cron uses UTC.
-    # Arizona 7:30 AM = 14:30 UTC
-    # Arizona 7:30 PM = 02:30 UTC next day
-    - cron: '30 14 * * *'
-    - cron: '30 2 * * *'
+    # Arizona 00:30
+    - cron: '30 7 * * *'
+
+    # Arizona 04:30
+    - cron: '30 11 * * *'
+
+    # Arizona 08:30
+    - cron: '30 15 * * *'
+
+    # Arizona 12:30
+    - cron: '30 19 * * *'
+
+    # Arizona 16:30
+    - cron: '30 23 * * *'
+
+    # Arizona 20:30
+    - cron: '30 3 * * *'
 
 permissions:
   contents: write
@@ -32,22 +45,18 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Generate compact PDF report
-        run: python scripts/generate_report.py
-
-      - name: Commit updated report
         run: |
-          git config user.name "gold-report-bot"
-          git config user.email "gold-report-bot@users.noreply.github.com"
-          git add public/index.html public/gold_report_compact.pdf public/latest_data.json
-          git commit -m "Update gold report" || echo "No changes to commit"
-          git push
+          pip install -r requirements.txt
 
-      - name: Send Gmail PDF attachment
-        env:
-          EMAIL_USER: ${{ secrets.EMAIL_USER }}
-          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
-          EMAIL_TO: ${{ secrets.EMAIL_TO }}
-        run: python scripts/send_email.py
+      - name: Generate gold dashboard
+        run: |
+          python scripts/generate_report.py
+
+      - name: Commit updated dashboard
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add public/index.html
+          git add public/*.pdf || true
+          git commit -m "Update gold dashboard" || echo "No changes to commit"
+          git push
