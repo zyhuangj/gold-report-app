@@ -1,1 +1,0 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>黃金每日報告 App</title></head><body><h1>黃金每日報告 App</h1><p>GitHub Actions 第一次跑完後會自動更新此頁。</p><p><a href="gold_report_compact.pdf">打開 PDF</a></p></body></html>
