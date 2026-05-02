@@ -3,22 +3,40 @@
     "category": "黃金與貴金屬",
     "name": "XAU/USD 現貨金",
     "unit": "USD/oz",
-    "latest": "unavailable",
-    "previous": "n/a",
-    "change": "source failed: RuntimeError",
-    "obs_date": "n/a",
-    "impact": "neutral",
-    "why": "金價上升利多；但仍需看美元與實質利率是否同步配合。（本次資料源未回傳，需人工檢查。）",
-    "source": "Yahoo Finance / yfinance XAUUSD=X",
+    "latest": "4,625.6",
+    "previous": "4,614.7",
+    "change": "+10.900 / +0.24%",
+    "obs_date": "2026-05-01",
+    "impact": "neutral / bullish",
+    "why": "現貨金上升利多黃金；若資料源失敗，會用 COMEX 黃金期貨作備援。",
+    "source": "Yahoo Finance / yfinance GC=F",
     "values": [
-      0,
-      0,
-      0
+      4785.39990234375,
+      4857.60009765625,
+      4806.60009765625,
+      4698.39990234375,
+      4732.5,
+      4705.10009765625,
+      4722.2998046875,
+      4675.39990234375,
+      4591.5,
+      4545.2001953125,
+      4614.7001953125,
+      4625.60009765625
     ],
     "labels": [
-      "n/a",
-      "n/a",
-      "n/a"
+      "2026-04-16",
+      "2026-04-17",
+      "2026-04-20",
+      "2026-04-21",
+      "2026-04-22",
+      "2026-04-23",
+      "2026-04-24",
+      "2026-04-27",
+      "2026-04-28",
+      "2026-04-29",
+      "2026-04-30",
+      "2026-05-01"
     ]
   },
   {
@@ -70,7 +88,7 @@
     "change": "+2.306 / +3.14%",
     "obs_date": "2026-05-01",
     "impact": "bullish",
-    "why": "白銀強於黃金代表貴金屬高 beta 端回暖。",
+    "why": "白銀強於黃金，代表貴金屬高 beta 端回暖。",
     "source": "Yahoo Finance / yfinance SI=F",
     "values": [
       78.60600280761719,
@@ -150,7 +168,7 @@
     "change": "+0.038 / +0.65%",
     "obs_date": "2026-05-01",
     "impact": "neutral",
-    "why": "銅弱代表成長降溫；需搭配信用壓力才明顯利多黃金。",
+    "why": "銅弱代表成長降溫；若信用壓力同步擴大才明顯利多黃金。",
     "source": "Yahoo Finance / yfinance HG=F",
     "values": [
       6.066500186920166,
@@ -190,7 +208,7 @@
     "change": "+0.131 / +0.13%",
     "obs_date": "2026-05-01",
     "impact": "bullish",
-    "why": "美元下跌降低非美元買家買金成本，減輕美元翻譯壓力。",
+    "why": "美元下跌降低非美元買家購金成本，減輕美元翻譯壓力。",
     "source": "Yahoo Finance / yfinance DX-Y.NYB",
     "values": [
       98.22000122070312,
@@ -550,7 +568,7 @@
     "change": "-0.020 / -1.02%",
     "obs_date": "2026-04-30",
     "impact": "bearish",
-    "why": "10Y 實質利率接近高位會壓制黃金。",
+    "why": "10Y 實質利率高位會壓制黃金。",
     "source": "FRED DFII10",
     "values": [
       1.9,
@@ -662,7 +680,7 @@
     ]
   },
   {
-    "category": "Fed與短端流動性",
+    "category": "Fed 與短端流動性",
     "name": "SOFR",
     "unit": "%",
     "latest": "3.66%",
@@ -702,7 +720,7 @@
     ]
   },
   {
-    "category": "Fed與短端流動性",
+    "category": "Fed 與短端流動性",
     "name": "ON RRP",
     "unit": "$bn",
     "latest": "0.607",
@@ -710,7 +728,7 @@
     "change": "-7.654 / -92.65%",
     "obs_date": "2026-05-01",
     "impact": "neutral / stress-watch",
-    "why": "ON RRP 低表示短端流動性緩衝偏薄。",
+    "why": "ON RRP 低代表短端流動性緩衝偏薄。",
     "source": "FRED RRPONTSYD",
     "values": [
       0.158,
@@ -742,7 +760,7 @@
     ]
   },
   {
-    "category": "Fed與短端流動性",
+    "category": "Fed 與短端流動性",
     "name": "銀行準備金",
     "unit": "$bn",
     "latest": "2,918,599",
@@ -782,7 +800,7 @@
     ]
   },
   {
-    "category": "Fed與短端流動性",
+    "category": "Fed 與短端流動性",
     "name": "TGA",
     "unit": "$bn",
     "latest": "981,929",
@@ -902,7 +920,7 @@
     ]
   },
   {
-    "category": "Fed與短端流動性",
+    "category": "Fed 與短端流動性",
     "name": "3M T-bill",
     "unit": "%",
     "latest": "3.59%",
@@ -942,13 +960,159 @@
     ]
   },
   {
+    "category": "通膨與貨幣",
+    "name": "M2",
+    "unit": "$bn",
+    "latest": "22,686",
+    "previous": "22,627.3",
+    "change": "+58.700 / +0.26%",
+    "obs_date": "2026-03-01",
+    "impact": "bullish",
+    "why": "M2 擴張代表貨幣供給增加，中長期支撐黃金抗通膨需求。",
+    "source": "FRED M2SL",
+    "values": [
+      21938.8,
+      22020.0,
+      22087.0,
+      22170.3,
+      22245.1,
+      22277.5,
+      22353.6,
+      22429.3,
+      22627.3,
+      22686.0
+    ],
+    "labels": [
+      "2025-06-01",
+      "2025-07-01",
+      "2025-08-01",
+      "2025-09-01",
+      "2025-10-01",
+      "2025-11-01",
+      "2025-12-01",
+      "2026-01-01",
+      "2026-02-01",
+      "2026-03-01"
+    ]
+  },
+  {
+    "category": "通膨與貨幣",
+    "name": "Import Price Index",
+    "unit": "index",
+    "latest": "144.6",
+    "previous": "143.5",
+    "change": "+1.100 / +0.77%",
+    "obs_date": "2026-03-01",
+    "impact": "bullish",
+    "why": "進口物價上升代表輸入型通膨壓力。",
+    "source": "FRED IR",
+    "values": [
+      140.8,
+      141.2,
+      141.0,
+      140.8,
+      141.2,
+      141.4,
+      142.2,
+      143.5,
+      144.6
+    ],
+    "labels": [
+      "2025-06-01",
+      "2025-07-01",
+      "2025-08-01",
+      "2025-09-01",
+      "2025-11-01",
+      "2025-12-01",
+      "2026-01-01",
+      "2026-02-01",
+      "2026-03-01"
+    ]
+  },
+  {
+    "category": "通膨與貨幣",
+    "name": "Average Hourly Earnings",
+    "unit": "USD/hour",
+    "latest": "37.38",
+    "previous": "37.29",
+    "change": "+0.090 / +0.24%",
+    "obs_date": "2026-03-01",
+    "impact": "bullish",
+    "why": "薪資上升若持續追物價，會使通膨變黏。",
+    "source": "FRED CES0500000003",
+    "values": [
+      36.36,
+      36.47,
+      36.62,
+      36.7,
+      36.85,
+      37.0,
+      37.02,
+      37.15,
+      37.29,
+      37.38
+    ],
+    "labels": [
+      "2025-06-01",
+      "2025-07-01",
+      "2025-08-01",
+      "2025-09-01",
+      "2025-10-01",
+      "2025-11-01",
+      "2025-12-01",
+      "2026-01-01",
+      "2026-02-01",
+      "2026-03-01"
+    ]
+  },
+  {
+    "category": "美元與匯率",
+    "name": "Broad Dollar Index",
+    "unit": "index",
+    "latest": "118.73",
+    "previous": "118.72",
+    "change": "+0.014 / +0.01%",
+    "obs_date": "2026-04-24",
+    "impact": "bearish",
+    "why": "廣義美元走強會壓制黃金；走弱則利多黃金。",
+    "source": "FRED DTWEXBGS",
+    "values": [
+      118.8998,
+      118.8552,
+      118.9916,
+      118.3581,
+      118.3623,
+      118.3616,
+      118.0795,
+      118.2374,
+      118.4331,
+      118.6004,
+      118.7155,
+      118.7294
+    ],
+    "labels": [
+      "2026-04-09",
+      "2026-04-10",
+      "2026-04-13",
+      "2026-04-14",
+      "2026-04-15",
+      "2026-04-16",
+      "2026-04-17",
+      "2026-04-20",
+      "2026-04-21",
+      "2026-04-22",
+      "2026-04-23",
+      "2026-04-24"
+    ]
+  },
+  {
     "category": "名目利率與曲線",
     "name": "10Y-2Y",
     "unit": "pp",
     "latest": "0.52",
     "previous": "n/a",
     "change": "calculated",
-    "obs_date": "2026-05-01",
+    "obs_date": "2026-05-02",
     "impact": "neutral",
     "why": "曲線變化需分辨由短端下行或長端上行造成；危機型短端下行較利多黃金。",
     "source": "calculated from FRED",
@@ -970,9 +1134,9 @@
     "latest": "0.81",
     "previous": "n/a",
     "change": "calculated",
-    "obs_date": "2026-05-01",
+    "obs_date": "2026-05-02",
     "impact": "neutral",
-    "why": "曲線變化需分辨由短端下行或長端上行造成；危機型短端下行較利多黃金。",
+    "why": "10Y-3M 由短端快速下行推動時較像衰退寬鬆訊號；由長端上行推動則偏期限溢價壓力。",
     "source": "calculated from FRED",
     "values": [
       0.8100000000000005,
@@ -992,7 +1156,7 @@
     "latest": "10.7",
     "previous": "n/a",
     "change": "calculated",
-    "obs_date": "2026-05-01",
+    "obs_date": "2026-05-02",
     "impact": "hold gold",
     "why": "股票相對黃金未極端便宜前，不支持大量轉股。",
     "source": "calculated from market data",
@@ -1014,7 +1178,7 @@
     "latest": "1.563",
     "previous": "n/a",
     "change": "calculated",
-    "obs_date": "2026-05-01",
+    "obs_date": "2026-05-02",
     "impact": "neutral",
     "why": "股票相對黃金未極端便宜前，不支持大量轉股。",
     "source": "calculated from market data",
@@ -1036,7 +1200,7 @@
     "latest": "5.429",
     "previous": "n/a",
     "change": "calculated",
-    "obs_date": "2026-05-01",
+    "obs_date": "2026-05-02",
     "impact": "neutral",
     "why": "股票相對黃金未極端便宜前，不支持大量轉股。",
     "source": "calculated from market data",
@@ -1055,7 +1219,7 @@
     "category": "輪動 / 資金流",
     "name": "GLD ETF holdings",
     "unit": "tonnes",
-    "latest": "check issuer/WGC",
+    "latest": "check manually / weekly",
     "previous": "n/a",
     "change": "not automated",
     "obs_date": "n/a",
@@ -1063,9 +1227,9 @@
     "why": "ETF 流入利多黃金；流出削弱實物支持型需求。",
     "source": "WGC / issuer",
     "values": [
-      0,
-      0,
-      0
+      0.0,
+      0.0,
+      0.0
     ],
     "labels": [
       "n/a",
@@ -1077,7 +1241,7 @@
     "category": "輪動 / 資金流",
     "name": "IAU ETF flows",
     "unit": "flow",
-    "latest": "check issuer/WGC",
+    "latest": "check manually / weekly",
     "previous": "n/a",
     "change": "not automated",
     "obs_date": "n/a",
@@ -1085,9 +1249,9 @@
     "why": "ETF 流入利多黃金；流出削弱實物支持型需求。",
     "source": "iShares / WGC",
     "values": [
-      0,
-      0,
-      0
+      0.0,
+      0.0,
+      0.0
     ],
     "labels": [
       "n/a",
@@ -1099,17 +1263,17 @@
     "category": "輪動 / 資金流",
     "name": "CFTC gold positioning",
     "unit": "contracts",
-    "latest": "weekly CoT",
+    "latest": "check manually / weekly",
     "previous": "n/a",
-    "change": "weekly",
-    "obs_date": "weekly",
+    "change": "not automated",
+    "obs_date": "n/a",
     "impact": "neutral",
     "why": "淨多支撐趨勢，但過度擁擠會提高去槓桿風險。",
     "source": "CFTC CoT",
     "values": [
-      0,
-      0,
-      0
+      0.0,
+      0.0,
+      0.0
     ],
     "labels": [
       "n/a",
